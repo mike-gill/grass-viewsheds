@@ -10,9 +10,10 @@ class Point(object):
     '''
 
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, id=None):
         '''
         Constructor
         '''
         self.x = x
         self.y = y
+        self.id = id

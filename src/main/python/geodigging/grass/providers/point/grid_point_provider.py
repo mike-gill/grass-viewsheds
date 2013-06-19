@@ -3,6 +3,7 @@ Created on 19 Mar 2013
 
 @author: mgill
 '''
+from geodigging.grass.geom.point import Point
 
 class GridPointProvider(object):
     '''
@@ -27,8 +28,8 @@ class GridPointProvider(object):
             self.col = 0
             self.row = self.row + 1
         if self.row < self.rows:
-            pt = [self.origin_point.x + (self.col * self.cell_width),
-                  self.origin_point.y + (self.row * self.cell_height)]
+            pt = Point(self.origin_point.x + (self.col * self.cell_width),
+                  self.origin_point.y + (self.row * self.cell_height))
             self.col = self.col + 1
             return pt
         else:
