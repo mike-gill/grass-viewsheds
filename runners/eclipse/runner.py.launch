@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.python.pydev.debug.regularLaunchConfigurationType">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/viewsheds/src/main/python/runner.py"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="GISBASE" value="C:\GRASS642RC1"/>
+<mapEntry key="GISRC" value="C:\Users\mgill\test.grassrc6"/>
+<mapEntry key="GRASS_SH" value="C:\GRASS642RC1\msys\bin\sh.exe"/>
+<mapEntry key="LD_LIBRARY_PATH" value="C:\GRASS642RC1\lib"/>
+<mapEntry key="PATH" value="C:\GRASS642RC1\etc;C:\GRASS642RC1\etc\python;C:\GRASS642RC1\lib;C:\GRASS642RC1\bin;C:\GRASS642RC1\extralib;C:\GRASS642RC1\msys\bin;C:\Python26;"/>
+<mapEntry key="PYTHONLIB" value="C:\Python26"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${workspace_loc:viewsheds/src/main/python/runner.py}"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_OTHER_WORKING_DIRECTORY" value=""/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value=""/>
+<stringAttribute key="org.python.pydev.debug.ATTR_INTERPRETER" value="__default"/>
+<stringAttribute key="org.python.pydev.debug.ATTR_PROJECT" value="viewsheds"/>
+</launchConfiguration>
