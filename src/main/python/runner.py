@@ -44,6 +44,6 @@ def process_specific_pts():
     viewshed_processor.process()
     
 if __name__ == '__main__':
-    add_views_specific_pts()
+    #add_views_specific_pts()
     #add_views_grid_pts()
-    #process_specific_pts()
+    process_specific_pts()

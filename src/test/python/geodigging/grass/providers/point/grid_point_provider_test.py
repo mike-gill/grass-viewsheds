@@ -25,9 +25,9 @@ class GridPointProviderTest(unittest.TestCase):
         cols = 3
         cell_width = 5
         cell_height = 5
-        expected_pt_list = [[100, 100], [105, 100], [110, 100],
-                            [100, 105], [105, 105], [110, 105],
-                            [100, 110], [105, 110], [110, 110]]
+        expected_pt_list = [Point(100, 100), Point(105, 100), Point(110, 100),
+                            Point(100, 105), Point(105, 105), Point(110, 105),
+                            Point(100, 110), Point(105, 110), Point(110, 110)]
         
         provider = GridPointProvider(origin_pt, rows, cols, cell_width, cell_height)
         
@@ -43,8 +43,7 @@ class GridPointProviderTest(unittest.TestCase):
     def compare_pt_lists(self, arr1, arr2):
         self.assertEquals(len(arr1), len(arr2), "List length")
         for i in range (len(arr1)):
-            self.assertEquals(arr1[i][0], arr2[i][0])
-            self.assertEquals(arr1[i][1], arr2[i][1])
+            self.assertEquals(arr1[i], arr2[i])
             
 
 

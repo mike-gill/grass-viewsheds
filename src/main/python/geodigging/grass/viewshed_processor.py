@@ -26,7 +26,7 @@ class ViewshedProcessor(object):
         p = self.point_provider.next()
         while p:
             # Create and run viewshed
-            viewshed_op = ViewshedOp(True, self.dem, self.prefix + p.id, 
+            viewshed_op = ViewshedOp(True, self.dem, self.prefix + p.fid, 
                                      [p.x, p.y], self.obs_elev, self.max_dist, False)
             viewshed_op.process()
             p = self.point_provider.next()
