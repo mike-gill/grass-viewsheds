@@ -8,7 +8,7 @@ from geodigging.grass.providers.point.grid_point_provider import GridPointProvid
 from geodigging.grass.geom.point import Point
 
 
-class TestGridPointProvider(unittest.TestCase):
+class GridPointProviderTest(unittest.TestCase):
 
 
     def setUp(self):
