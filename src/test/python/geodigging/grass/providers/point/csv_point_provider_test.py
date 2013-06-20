@@ -9,7 +9,7 @@ from geodigging.grass.providers.point.csv_point_provider import CsvPointProvider
 from geodigging.grass.geom.point import Point
 
 
-class Test(unittest.TestCase):
+class CsvPointProviderTest(unittest.TestCase):
 
 
     def setUp(self):
