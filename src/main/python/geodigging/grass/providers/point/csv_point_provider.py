@@ -27,8 +27,11 @@ class CsvPointProvider(object):
         if skip_first_row: self.csv_reader.next()
     
     def next(self):
-        row = self.csv_reader.next()
-        if not row: return None
+        try:
+            row = self.csv_reader.next()
+            if not row: return None
+        except StopIteration:
+            return None
         return Point(float(row[self.xfield_idx]),
                      float(row[self.yfield_idx]),
                      row[self.idfield_idx])
